@@ -1,0 +1,97 @@
+@use "../global";
+html {
+  font-family: "Roboto", sans-serif !important;
+}
+.navbar {
+  background-color: rgba(28, 30, 83, 1);
+}
+
+#plan {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  .plan {
+    h1 {
+      color: var(--dark-blue, #282938);
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px; /* 133.333% */
+    }
+    > p {
+      padding-top: 16px;
+      color: var(--dark-blue, #282938);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 175% */
+      width: 38%;
+      padding-bottom: 64px;
+    }
+    .row {
+      .col-12 {
+        .plan__card {
+          border-radius: 12px;
+          background: var(--grey, #f4f6fc);
+          padding: 64px 48px;
+          .card__hero {
+            h2 {
+              color: var(--dark-blue, #282938);
+              font-size: 38px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 56px; /* 147.368% */
+            }
+            a {
+              color: var(--royal-blue, #2405f2);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 28px; /* 175% */
+            }
+          }
+          h6 {
+            color: var(--dark-blue, #282938);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px; /* 150% */
+            padding-top: 20px;
+            padding-bottom: 8px;
+          }
+          p {
+            color: var(--dark-blue, #282938);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 175% */
+            padding-bottom: 78px;
+          }
+          .p{
+            color: var(--dark-blue, #282938);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 175% */
+            padding-bottom: 35px;
+          }
+          ul {
+            padding-bottom: 40px;
+            li {
+              list-style-type: none;
+              padding-bottom: 20px;
+            }
+          }
+          button {
+            padding: 15px 51px;
+            border-radius: 41px;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

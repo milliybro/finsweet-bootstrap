@@ -88,3 +88,19 @@ html {
   text-align: center;
   display: flex;
 }
+#plan .plan .row .col-12 .plan__card:hover {
+  border-radius: 12px;
+  background: #1c1e53;
+}
+#plan .plan .row .col-12 .plan__card:hover h2,
+#plan .plan .row .col-12 .plan__card:hover h6,
+#plan .plan .row .col-12 .plan__card:hover p,
+#plan .plan .row .col-12 .plan__card:hover li {
+  color: #fff;
+}
+#plan .plan .row .col-12 .plan__card:hover a {
+  color: var(--yellow, #fcd980);
+}
+#plan .plan .row .col-12 .plan__card:hover pricing-btn {
+  background-color: #fcd980 !important;
+}

@@ -66,7 +66,7 @@ html {
             line-height: 28px; /* 175% */
             padding-bottom: 78px;
           }
-          .p{
+          .p {
             color: var(--dark-blue, #282938);
             font-size: 16px;
             font-style: normal;
@@ -89,6 +89,22 @@ html {
             align-items: center;
             text-align: center;
             display: flex;
+          }
+          &:hover {
+            border-radius: 12px;
+            background: #1c1e53;
+            h2,
+            h6,
+            p,
+            li {
+              color: #fff;
+            }
+            a {
+              color: var(--yellow, #fcd980);
+            }
+            pricing-btn {
+              background-color: #fcd980 !important;
+            }
           }
         }
       }

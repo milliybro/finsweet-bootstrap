@@ -1,0 +1,1 @@
+alert("Assalomu Aleykum \n'MilliyBro' ning tayyorlagan saytiga \nXush kelibsiz! ")

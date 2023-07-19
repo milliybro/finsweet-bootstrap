@@ -6,3 +6,29 @@ html {
 .navbar {
   background-color: rgb(28, 30, 83);
 }
+
+#portfolio {
+  background: var(--grey, #F4F6FC);
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+#portfolio .portfolio h6 {
+  color: var(--dark-blue, #282938);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+#portfolio .portfolio h1 {
+  color: var(--dark-blue, #282938);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+  padding-top: 6px;
+  padding-bottom: 24px;
+}
+#portfolio .portfolio .header__social {
+  padding-top: 32px;
+  gap: 25px;
+}

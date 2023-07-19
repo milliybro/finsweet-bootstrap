@@ -102,5 +102,5 @@ html {
   color: var(--yellow, #fcd980);
 }
 #plan .plan .row .col-12 .plan__card:hover pricing-btn {
-  background-color: #fcd980 !important;
+  color: #fcd980 !important;
 }

@@ -3,7 +3,33 @@ html {
   font-family: "Roboto", sans-serif !important;
 }
 .navbar {
-  background-color: rgba(28, 30, 83, 1);
+  background-color: #1c1e53 !important;
+  .navbar-brand {
+    font-size: 32px;
+  }
+  li {
+    a {
+      color: #fff !important;
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url(../../images/home/hamburger.svg);
+    border: none;
+  }
+  ul {
+    gap: 40px;
+    padding-right: 40px;
+    li {
+    }
+  }
+  button {
+    &:hover {
+      background: #fff;
+      a {
+        color: #1c1e53 !important;
+      }
+    }
+  }
 }
 
 #plan {
@@ -106,6 +132,94 @@ html {
               color: #fcd980 !important;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #1c1e53 !important;
+  padding-top: 102px;
+  padding-bottom: 92px;
+  .footer {
+    .row {
+      .logo {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      p {
+        padding-top: 24px;
+        padding-bottom: 43px;
+        color: var(--white, #fff);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+        width: 60%;
+      }
+      h2 {
+        color: #fff;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px; /* 133.333% */
+      }
+      img {
+        padding-right: 25px;
+      }
+    }
+    .foo__contact {
+      background: var(--yellow, #fcd980);
+      padding: 18px 37px;
+      h5 {
+        color: var(--dark-blue, #282938);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 177.778% */
+      }
+    }
+  }
+}
+
+#accord {
+  padding-bottom: 128px;
+  .accord {
+    h2 {
+      color: var(--dark-blue, #282938);
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px; /* 133.333% */
+      padding-bottom: 16px;
+    }
+    a {
+      padding-top: 16px;
+      color: var(--royal-blue, #2405f2);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px; /* 177.778% */
+    }
+    .accordion1 {
+      .accord__span {
+        color: var(--royal-blue, #2405f2);
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px; /* 150% */
+        padding-right: 58px;
+      }
+      .accordion-button {
+        &::after {
+          background-image: url("../../images/pricing/plus-circle.svg");
+          transform: scale(1.5);
+        }
+        &:not(.collapsed)::after {
+          background-image: url("../../images/pricing/plus-circle.svg");
+          transform: rotate(45deg) scale(1.5);
         }
       }
     }

@@ -6,6 +6,26 @@ html {
 .navbar {
   background-color: #1c1e53 !important;
 }
+.navbar .navbar-brand {
+  font-size: 32px;
+}
+.navbar li a {
+  color: #fff !important;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url(../../images/home/hamburger.svg);
+  border: none;
+}
+.navbar ul {
+  gap: 40px;
+  padding-right: 40px;
+}
+.navbar button:hover {
+  background: #fff;
+}
+.navbar button:hover a {
+  color: #1c1e53 !important;
+}
 
 #hero {
   background-color: #1c1e53;
@@ -38,6 +58,10 @@ html {
   padding-bottom: 48px;
 }
 
+.offcanvas {
+  background-color: #1c1e53;
+}
+
 #project {
   padding-bottom: 128px;
 }
@@ -49,6 +73,32 @@ html {
   line-height: 64px;
   padding-top: 57px;
   padding-bottom: 64px;
+}
+#project .project__img {
+  height: 600px;
+  cursor: pointer;
+}
+#project .project__img .img1:hover {
+  background-color: #1c1e53;
+  position: relative;
+  z-index: 1;
+}
+#project .project__img .img1:hover::before {
+  top: 0;
+  overflow: visible;
+}
+#project .project__img .img1::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 50%;
+}
+#project .project__img .project_img1 {
+  width: 50%;
+  background: linear-gradient(306deg, #1c1e53, rgba(28, 30, 83, 0.42));
 }
 
 #design {
@@ -98,4 +148,120 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 175% */
+}
+
+#carousel {
+  background: var(--grey, #f8f9fb);
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+#carousel .carousel1 .content .col-3 h3 {
+  color: var(--dark-blue, #282938);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+}
+#carousel .carousel1 .content .col-3 p {
+  padding-top: 16px;
+  color: var(--dark-blue, #282938);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+#carousel .carousel1 .content .col-9 {
+  padding-left: 100px;
+}
+#carousel .carousel1 .content .col-9 h5 {
+  color: var(--dark-blue, #282938);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 150% */
+  padding-bottom: 40px;
+}
+#carousel .carousel1 .content .col-9 h6 {
+  padding-left: 10px;
+  padding-top: 20px;
+  color: var(--dark-blue, #282938);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 177.778% */
+}
+#carousel .carousel1 .content .col-9 p {
+  padding-left: 10px;
+  color: var(--dark-blue, #282938);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 233.333% */
+}
+#carousel .carousel1 .carousel-control-prev, #carousel .carousel1 .carousel-control-next {
+  top: auto;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#carousel .carousel1 .carousel-control-prev:hover, #carousel .carousel1 .carousel-control-next:hover {
+  background-color: #1c1e53;
+}
+#carousel .carousel1 .carousel-control-prev {
+  left: auto;
+  right: 5%;
+}
+#carousel .carousel1 .carousel-indicators [data-bs-target] {
+  transform: translateY(50px);
+  background-color: #1c1e53;
+  height: 10px;
+  width: 50px;
+  border-radius: 10px;
+  border: 0;
+  transition: all 0.6s ease;
+}
+#carousel .carousel1 .carousel-indicators .active {
+  width: 70px;
+}
+
+footer {
+  background: #1c1e53 !important;
+  padding-top: 102px;
+  padding-bottom: 92px;
+}
+footer .footer .row .logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+footer .footer .row p {
+  padding-top: 24px;
+  padding-bottom: 43px;
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  width: 60%;
+}
+footer .footer .row h2 {
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+}
+footer .footer .row img {
+  padding-right: 25px;
+}
+footer .footer .foo__contact {
+  background: var(--yellow, #fcd980);
+  padding: 18px 37px;
+}
+footer .footer .foo__contact h5 {
+  color: var(--dark-blue, #282938);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
 }

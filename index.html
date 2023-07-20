@@ -6,42 +6,46 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Home</title>
    <link rel="stylesheet" href="sass/vendors/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
    <link rel="stylesheet" href="css/home.min.css">
 </head>
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg">
-         <div class="container container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-               aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg bg-body-dark fixed-top">
+         <div class="container-lg">
+            <a class="navbar-brand text-light fw-bold " href="index.html">{finsweet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+               aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-               <a class=" d-flex navbar-brand text-light" href="index.html">{finsweet</a>
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-               </ul>
-               <form class="d-flex" role="search">
-                  <ul class="navbar-nav me-auto mb-md-5 mb-lg-0">
+            <div class="offcanvas offcanvas-end vh-100" tabindex="-1" id="offcanvasNavbar"
+               aria-labelledby="offcanvasNavbarLabel">
+               <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">{finsweet</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-dark">
                      <li class="nav-item">
-                        <a class="nav-link active text-light " aria-current="page" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item ">
-                        <a class="nav-link text-light" href="about.html">About us</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" href="pricing.html">Pricing</a>
+                        <a class="nav-link" href="about.html">About us</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" href="work.html">Work</a>
+                        <a class="nav-link" href="pricing.html">Pricing</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" href="blog.html">Blog</a>
+                        <a class="nav-link" href="work.html">Work</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
                      </li>
                   </ul>
-                  <button class="btn btn-outline-light rounded-5 ps-3 pe-3 " type="submit">Contact us</button>
-               </form>
+                  <button class="btn btn-outline-light rounded-5 px-4" type="submit"><a href="contact.html"
+                        class="text-light text-decoration-none">Contact</a></button>
+               </div>
             </div>
          </div>
       </nav>
@@ -83,8 +87,14 @@
                </div>
             </div>
             <div class="row g-3">
-               <div class="col-12 col-lg-8">
-                  <img class="w-100" src="images/home/project.png">
+               <div class="col-12 col-lg-8 project__img">
+                  <img class="w-100 img1" src="images/home/project.png">
+                  <div class="project_img1">
+                     <h3>
+                        Workhub office Webflow Webflow Design
+                     </h3>
+                     <h5>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam </h5>
+                  </div>
                </div>
                <div class="col-12 pb-3 col-lg-4">
                   <img class="w-100 pb-4" src="images/home/project1.png">
@@ -155,10 +165,171 @@
             </div>
          </div>
       </section>
-   </main>
-   <script src="js/main.js"></script>
+      <section id="carousel">
+         <div class="container">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide carousel1">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                     aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                     aria-label="Slide 4"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                     <div class="row content">
+                        <div class="col-3">
+                           <h3>What our clients say about us</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+                        </div>
+                        <div class="col-9">
+                           <h5>
+                              "The best agency we’ve worked with so far. They understand our product and are able to add
+                              new features with a great focus."
+                           </h5>
+                           <div class="col__team d-flex">
+                              <img class="col-img" src="images/home/team1.svg">
+                              <div class="col__team-content">
+                                 <h6>Jenny Wilson</h6>
+                                 <p>Vice President</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-caption d-none d-md-block">
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                     <div class="row content">
+                        <div class="col-3">
+                           <h3>What our clients say about us</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+                        </div>
+                        <div class="col-9">
+                           <h5>
+                              "The best agency we’ve worked with so far. They understand our product and are able to add
+                              new features with a great focus."
+                           </h5>
+                           <div class="col__team d-flex">
+                              <img class="col-img" src="images/home/team1.svg">
+                              <div class="col__team-content">
+                                 <h6>Jenny Wilson</h6>
+                                 <p>Vice President</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-caption d-none d-md-block">
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row content">
+                        <div class="col-3">
+                           <h3>What our clients say about us</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+                        </div>
+                        <div class="col-9">
+                           <h5>
+                              "The best agency we’ve worked with so far. They understand our product and are able to add
+                              new features with a great focus."
+                           </h5>
+                           <div class="col__team d-flex">
+                              <img class="col-img" src="images/home/team1.svg">
+                              <div class="col__team-content">
+                                 <h6>Jenny Wilson</h6>
+                                 <p>Vice President</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-caption d-none d-md-block">
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row content">
+                        <div class="col-3">
+                           <h3>What our clients say about us</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+                        </div>
+                        <div class="col-9">
+                           <h5>
+                              "The best agency we’ve worked with so far. They understand our product and are able to add
+                              new features with a great focus."
+                           </h5>
+                           <div class="col__team d-flex">
+                              <img class="col-img" src="images/home/team1.svg">
+                              <div class="col__team-content">
+                                 <h6>Jenny Wilson</h6>
+                                 <p>Vice President</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-caption d-none d-md-block">
+                     </div>
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+         </div>
+         <script src="js/bootstrap.bundle.min.js"></script>
+      </section>
 
-   <script src="js/bootstrap.bundle.min.js"></script>
+   </main>
+   <footer>
+      <div class="container footer">
+         <div class="row">
+            <div class="col-12 col-lg-6 pe-5">
+               <h5 class="text-light logo">
+                  {finsweet
+               </h5>
+               <p class="text-light">
+                  We are always open to discuss your project and improve your online presence.
+               </p>
+               <div class="foo__contact">
+                  <div class="row text-start">
+                     <div class="col-6">
+                        <h5>Email me at</h5>
+                        <h6>contact@website.com</h6>
+                     </div>
+                     <div class="col-6">
+                        <h5>Email me at</h5>
+                        <h6>contact@website.com</h6>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+               <h2>
+                  Lets Talk!
+               </h2>
+               <p>
+                  We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.
+               </p>
+               <img src="images/home/facebook.svg">
+               <img src="images/home/twitter.svg">
+               <img src="images/home/instagram.svg">
+               <img src="images/home/linkedin.svg">
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+<script src="js/main.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

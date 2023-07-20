@@ -3,7 +3,33 @@ html {
   font-family: "Roboto", sans-serif !important;
 }
 .navbar {
-  background-color: rgba(28, 30, 83, 1);
+  background-color: #1c1e53 !important;
+  .navbar-brand {
+    font-size: 32px;
+  }
+  li {
+    a {
+      color: #fff !important;
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url(../../images/home/hamburger.svg);
+    border: none;
+  }
+  ul {
+    gap: 40px;
+    padding-right: 40px;
+    li {
+    }
+  }
+  button {
+    &:hover {
+      background: #fff;
+      a {
+        color: #1c1e53 !important;
+      }
+    }
+  }
 }
 
 #study {
@@ -87,6 +113,50 @@ html {
         font-weight: 500;
         line-height: 28px; /* 175% */
         text-decoration: none;
+      }
+    }
+  }
+}
+footer {
+  background: #1c1e53 !important;
+  padding-top: 102px;
+  padding-bottom: 92px;
+  .footer {
+    .row {
+      .logo {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      p {
+        padding-top: 24px;
+        padding-bottom: 43px;
+        color: var(--white, #fff);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+        width: 60%;
+      }
+      h2 {
+        color: #fff;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px; /* 133.333% */
+      }
+      img {
+        padding-right: 25px;
+      }
+    }
+    .foo__contact {
+      background: var(--yellow, #fcd980);
+      padding: 18px 37px;
+      h5 {
+        color: var(--dark-blue, #282938);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 177.778% */
       }
     }
   }

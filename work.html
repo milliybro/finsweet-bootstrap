@@ -4,44 +4,47 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Pricing</title>
+   <title>Work</title>
    <link rel="stylesheet" href="sass/vendors/bootstrap.min.css" />
    <link rel="stylesheet" href="css/work.min.css">
 </head>
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg">
-         <div class="container container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-               aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg bg-body-dark fixed-top">
+         <div class="container-lg">
+            <a class="navbar-brand text-light fw-bold " href="index.html">{finsweet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+               aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-               <a class=" d-flex navbar-brand text-light" href="index.html">{finsweet</a>
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-               </ul>
-               <form class="d-flex" role="search">
-                  <ul class="navbar-nav me-auto mb-md-5 mb-lg-0">
+            <div class="offcanvas offcanvas-end vh-100" tabindex="-1" id="offcanvasNavbar"
+               aria-labelledby="offcanvasNavbarLabel">
+               <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">{finsweet</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-dark">
                      <li class="nav-item">
-                        <a class="nav-link active text-light " aria-current="page" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item ">
-                        <a class="nav-link text-light" href="about.html">About us</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" href="pricing.html">Pricing</a>
+                        <a class="nav-link" href="about.html">About us</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" href="work.html">Work</a>
+                        <a class="nav-link" href="pricing.html">Pricing</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" href="blog.html">Blog</a>
+                        <a class="nav-link" href="work.html">Work</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
                      </li>
                   </ul>
-                  <button class="btn btn-outline-light rounded-5 ps-3 pe-3 " type="submit">Contact us</button>
-               </form>
+                  <button class="btn btn-outline-light rounded-5 px-4" type="submit"><a href="contact.html"
+                        class="text-light text-decoration-none">Contact</a></button>
+               </div>
             </div>
          </div>
       </nav>
@@ -62,7 +65,257 @@
             </div>
          </div>
       </section>
+      <section id="tab">
+         <div class="container tab">
+            <div class="tabs-1">
+              <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                  All
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                  UI Design
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                  Webflow Design
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-disabled-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-disabled"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-disabled"
+                    aria-selected="false"
+                  >
+                  Figma Design
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                     <div class="col-12 col-md-6">
+                        <img src="images/work/tab1.png">
+                        <h3>Template 1</h3>
+                        <p>
+                           Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                        </p>
+                        <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <img src="images/work/tab2.png">
+                        <h3>Template 2</h3>
+                        <p>
+                           Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                        </p>
+                        <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <img src="images/work/tab3.png">
+                        <h3>Template 3</h3>
+                        <p>
+                           Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                        </p>
+                        <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <img src="images/work/tab4.png">
+                        <h3>Template 4</h3>
+                        <p>
+                           Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                        </p>
+                        <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <img src="images/work/tab5.png">
+                        <h3>Template 5</h3>
+                        <p>
+                           Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                        </p>
+                        <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <img src="images/work/tab6.png">
+                        <h3>Template 6</h3>
+                        <p>
+                           Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                        </p>
+                        <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                     </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                     <img src="images/work/tab1.png">
+                     <h3>Template 1</h3>
+                     <p>
+                        Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                     </p>
+                     <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                  </div>
+                  <div class="col-12 col-md-6">
+                     <img src="images/work/tab2.png">
+                     <h3>Template 2</h3>
+                     <p>
+                        Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                     </p>
+                     <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                  </div>
+               </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                  tabindex="0"
+                >
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                     <img src="images/work/tab3.png">
+                     <h3>Template 3</h3>
+                     <p>
+                        Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                     </p>
+                     <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                  </div>
+                  <div class="col-12 col-md-6">
+                     <img src="images/work/tab4.png">
+                     <h3>Template 4</h3>
+                     <p>
+                        Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                     </p>
+                     <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                  </div>
+               </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-disabled"
+                  role="tabpanel"
+                  aria-labelledby="pills-disabled-tab"
+                  tabindex="0"
+                >
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                     <img src="images/work/tab5.png">
+                     <h3>Template 5</h3>
+                     <p>
+                        Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                     </p>
+                     <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                  </div>
+                  <div class="col-12 col-md-6">
+                     <img src="images/work/tab6.png">
+                     <h3>Template 6</h3>
+                     <p>
+                        Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                     </p>
+                     <a class="text-decoration-none text-dark" href="#">View Portfolio <img src="images/work/Arrow 3.svg" class="ps-3"></a>
+                  </div>
+               </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-5"
+                  role="tabpanel"
+                  aria-labelledby="pills-disabled-tab"
+                  tabindex="0"
+                >
+                  Tab 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Illo, quidem!
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
    </main>
+   <footer>
+      <div class="container footer">
+         <div class="row">
+            <div class="col-12 col-lg-6 pe-5">
+               <h5 class="text-light logo">
+                  {finsweet
+               </h5>
+               <p class="text-light">
+                  We are always open to discuss your project and improve your online presence.
+               </p>
+               <div class="foo__contact">
+                  <div class="row text-start">
+                     <div class="col-6">
+                        <h5>Email me at</h5>
+                        <h6>contact@website.com</h6>
+                     </div>
+                     <div class="col-6">
+                        <h5>Email me at</h5>
+                        <h6>contact@website.com</h6>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+               <h2>
+                  Lets Talk!
+               </h2>
+               <p>
+                  We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.
+               </p>
+               <img src="images/home/facebook.svg">
+               <img src="images/home/twitter.svg">
+               <img src="images/home/instagram.svg">
+               <img src="images/home/linkedin.svg">
+            </div>
+         </div>
+      </div>
+   </footer>
    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

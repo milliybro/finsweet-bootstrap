@@ -5,6 +5,32 @@ html {
 
 .navbar {
   background-color: #1c1e53 !important;
+  .navbar-brand {
+    font-size: 32px;
+  }
+  li {
+    a {
+      color: #fff !important;
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url(../../images/home/hamburger.svg);
+    border: none;
+  }
+  ul {
+    gap: 40px;
+    padding-right: 40px;
+    li {
+    }
+  }
+  button {
+    &:hover {
+      background: #fff;
+      a {
+        color: #1c1e53 !important;
+      }
+    }
+  }
 }
 #hero {
   background-color: #1c1e53;
@@ -42,6 +68,9 @@ html {
     }
   }
 }
+.offcanvas {
+  background-color: #1c1e53;
+}
 #project {
   padding-bottom: 128px;
   .project {
@@ -56,6 +85,35 @@ html {
           padding-top: 57px;
           padding-bottom: 64px;
         }
+      }
+    }
+    &__img {
+      // overflow: hidden;
+      height: 600px;
+      cursor: pointer;
+      .img1 {
+        &:hover {
+          background-color: #1c1e53;
+          position: relative;
+          z-index: 1;
+          &::before {
+            top: 0;
+            overflow: visible;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0;
+          display: block;
+          height: 100%;
+          width: 50%;
+        }
+      }
+      .project_img1 {
+        width: 50%;
+        background: linear-gradient(306deg, #1c1e53, rgba(28, 30, 83, 0.42));
       }
     }
   }
@@ -107,6 +165,138 @@ html {
         font-style: normal;
         font-weight: 400;
         line-height: 28px; /* 175% */
+      }
+    }
+  }
+}
+#carousel {
+  background: var(--grey, #f8f9fb);
+  padding-top: 128px;
+  padding-bottom: 128px;
+  .carousel1 {
+    .content {
+      .col-3 {
+        h3 {
+          color: var(--dark-blue, #282938);
+          font-size: 38px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 56px;
+        }
+        p {
+          padding-top: 16px;
+          color: var(--dark-blue, #282938);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+        }
+      }
+      .col-9 {
+        padding-left: 100px;
+        h5 {
+          color: var(--dark-blue, #282938);
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 48px; /* 150% */
+          padding-bottom: 40px;
+        }
+        h6 {
+          padding-left: 10px;
+          padding-top: 20px;
+          color: var(--dark-blue, #282938);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 15px; /* 177.778% */
+        }
+        p {
+          padding-left: 10px;
+          color: var(--dark-blue, #282938);
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px; /* 233.333% */
+        }
+      }
+    }
+    .carousel-control {
+      &-prev,
+      &-next {
+        top: auto;
+        padding: 0px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        &:hover {
+          background-color: #1c1e53;
+        }
+      }
+      &-prev {
+        left: auto;
+        right: 5%;
+      }
+      .col-img {
+      }
+    }
+    .carousel-indicators {
+      & [data-bs-target] {
+        transform: translateY(50px);
+        background-color: #1c1e53;
+        height: 10px;
+        width: 50px;
+        border-radius: 10px;
+        border: 0;
+        transition: all 0.6s ease;
+      }
+      & .active {
+        width: 70px;
+      }
+    }
+  }
+}
+
+footer {
+  background: #1c1e53 !important;
+  padding-top: 102px;
+  padding-bottom: 92px;
+  .footer {
+    .row {
+      .logo {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      p {
+        padding-top: 24px;
+        padding-bottom: 43px;
+        color: var(--white, #fff);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+        width: 60%;
+      }
+      h2 {
+        color: #fff;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px; /* 133.333% */
+      }
+      img {
+        padding-right: 25px;
+      }
+    }
+    .foo__contact {
+      background: var(--yellow, #fcd980);
+      padding: 18px 37px;
+      h5 {
+        color: var(--dark-blue, #282938);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 177.778% */
       }
     }
   }

@@ -4,14 +4,14 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Blog</title>
+   <title>Contact</title>
    <link rel="stylesheet" href="sass/vendors/bootstrap.min.css" />
-   <link rel="stylesheet" href="css/blog.min.css">
+   <link rel="stylesheet" href="css/contact.min.css">
 </head>
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +47,57 @@
       </nav>
    </header>
    <main>
-      
+      <section id="header">
+         <div class="container header">
+            <h1 class="text-center">Contact Us</h1>
+            <p class="text-center">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            </p>
+         </div>
+      </section>
+      <section id="form">
+         <div class="container form">
+            <form class="row g-3 needs-validation" novalidate>
+               <div class="col-md-6">
+                  <label for="Name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="Name" required placeholder="Enter your name" />
+                  <div class="valid-feedback">Done</div>
+                  <div class="invalid-feedback">Please choose a Name.</div>
+               </div>
+               <div class="col-md-6">
+                  <label for="Email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="Email" required placeholder="Enter your Emial" />
+                  <div class="valid-feedback">Done</div>
+                  <div class="invalid-feedback">Please choose a Email.</div>
+               </div>
+               <div class="col-md-6">
+                  <label for="Subject1" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="Subject1" required placeholder="Provide context" />
+                  <div class="valid-feedback">Done</div>
+                  <div class="invalid-feedback">Please choose a Subject.</div>
+               </div>
+               <div class="col-md-6">
+                  <label for="Subject2" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="Subject2" required placeholder="Select Subject" />
+                  <div class="valid-feedback">Done</div>
+                  <div class="invalid-feedback">Please choose a Subject.</div>
+               </div>
+               <div class="col-12 flex-column">
+                  <label for="Message" class="form-label">Message</label><br>
+                  <textarea class="rounded-3 w-100 p-3" name="Message" id="Message" cols="30" rows="10" placeholder="Write your  question here" required></textarea>
+                  <div class="valid-feedback">Done</div>
+                  <div class="invalid-feedback">Please choose a Subject.</div>
+               </div>
+
+               <div class="col-12">
+                  <button class="btn btn-primary bg-dark rounded-5 border-0 px-5 py-3" type="submit">Send
+                     Messege</button>
+               </div>
+            </form>
+         </div>
+      </section>
    </main>
+   <script src="js/main.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
